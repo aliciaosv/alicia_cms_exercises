@@ -9,7 +9,7 @@
   <nav>
     <a href="four-index.php">Till start</a>
     <a href="page1.php">Sektion 1</a>
-    <a href="">Sektion 2</a>
+    <a href="page2.php">Sektion 2</a>
   </nav>
 </body>
 </html>

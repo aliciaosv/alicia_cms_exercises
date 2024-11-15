@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "../../links.php"
+<?php include "../../links.php";
+include "../fourth-test/footer.php";
 ?>
 <head>
   <meta charset="UTF-8">
@@ -18,12 +19,15 @@
     $month = date('F');
     $amIOdd = ((int) $today % 2 === 0) ? "jämnt" : "udda";
 
-    $datePhrase = "Idag är det $weekday den $today $month";
-    $datePhrase .= "<br>Den $today är ett $amIOdd datum";
+    $datePhrase = "Idag är det $weekday den $today $month, ";
+    $datePhrase .= "<br> den $today är ett $amIOdd datum";
 
     return $datePhrase;
   }
   echo getDateInfo();
+  ?>
+  <?php
+  aFoot()
   ?>
 </body>
 </html>

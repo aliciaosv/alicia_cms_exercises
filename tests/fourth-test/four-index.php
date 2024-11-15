@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "../../links.php"
+<?php include "../../links.php";
+include "../fourth-test/footer.php";
 ?>
 <head>
   <meta charset="UTF-8">
@@ -12,7 +13,7 @@
     linkList();
     include "../fourth-test/header.php";
   function timeText() {
-    $time = (int) date('T');
+    $time = (int) date('G');
     $texts = [
       8 => "God morgon!",
       12 => "Lunchrast",
@@ -31,6 +32,8 @@
   $getTimeText = timeText();
   ?>
   <h3><?= $getTimeText?></h3>
-
+  <?php
+  aFoot()
+  ?>
 </body>
 </html>
